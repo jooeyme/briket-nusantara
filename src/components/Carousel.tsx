@@ -154,14 +154,23 @@ export const ClickableCarousel: React.FC = () => {
         ))}
       </Swiper>
         <div className="flex pt-8 items-center justify-center">
-            <Link to="/about-company" className="max-w-md md:w-1/3"> {/* Class w-full/md:w-1/3 dipindahkan ke Link */}
+            <Link to="/catalogue" className="max-w-md md:w-1/3"> {/* Class w-full/md:w-1/3 dipindahkan ke Link */}
                 <Button className="w-full">Get More Product</Button> {/* Button kini mengambil 100% lebar Link */}
             </Link>
             </div>
 
       {/* Dialog untuk menampilkan detail informasi */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-[425px] md:max-w-xl lg:max-w-2xl dark:bg-gray-900">
+        <DialogContent 
+            className="
+            max-w-[80vw]
+            max-h-[60vh] 
+            overflow-y-auto
+            sm:max-w-[425px] 
+            md:max-w-xl 
+            lg:max-w-2xl 
+            dark:bg-gray-900"
+            >
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-gray-100">
               {selectedItem?.title} {/* Gunakan optional chaining `?.` karena selectedItem bisa null */}
@@ -175,7 +184,7 @@ export const ClickableCarousel: React.FC = () => {
                 <img 
                     src={selectedItem.image} 
                     alt={selectedItem.title} 
-                    className="max-w-sm h-auto rounded-md object-cover mb-4" 
+                    className="w-full h-auto rounded-md object-cover mb-4" 
                 />
             )}
             {selectedItem?.longDescription && (

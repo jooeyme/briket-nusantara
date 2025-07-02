@@ -220,7 +220,14 @@ export const Catalogue = () => {
 
       {/* Dialog untuk Detail Produk */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-[425px] md:max-w-xl lg:max-w-2xl dark:bg-gray-900">
+        <DialogContent className="
+            max-w-[80vw]
+            max-h-[60vh] 
+            overflow-y-auto
+            sm:max-w-[425px] 
+            md:max-w-xl 
+            lg:max-w-2xl 
+            dark:bg-gray-900">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-gray-100">
               {selectedProduct?.title}
@@ -234,7 +241,7 @@ export const Catalogue = () => {
                 <img
                     src={selectedProduct.image}
                     alt={selectedProduct.title}
-                    className="max-w-xs h-auto rounded-md object-cover mb-4"
+                    className="w-full h-auto rounded-md object-cover mb-4"
                 />
             )}
             {selectedProduct?.longDescription && (
