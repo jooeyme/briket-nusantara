@@ -21,10 +21,10 @@ import {
   DialogHeader,
   DialogTitle,
 } from './ui/dialog';    // Pastikan path ini sesuai
-import image1 from '../assets/gallery/white-1.jpg';
-import image2 from '../assets/gallery/white-2.jpg';
-import image3 from '../assets/gallery/white-3.jpg';
-import image4 from '../assets/gallery/white-4.jpg';
+import image1 from '../assets/gallery/white-1.JPG';
+import image2 from '../assets/gallery/white-2.JPG';
+import image3 from '../assets/gallery/white-3.JPG';
+import image4 from '../assets/gallery/white-4.JPG';
 
 
 // --- Definisi Tipe Data untuk Item Carousel ---

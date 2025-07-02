@@ -12,7 +12,7 @@ import {
 // import { Check, Linkedin } from "lucide-react";
 // import { LightBulbIcon } from "./Icons";
 // import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import CardImage from '../assets/brown-2.jpg';
+import CardImage from '../assets/brown-2.JPG';
 
 export const HeroCards = () => {
   return (

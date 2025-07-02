@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import CardImage from '../assets/brown-2.jpg';
+import CardImage from '../assets/brown-2.JPG';
 
 import {
   Dialog,
