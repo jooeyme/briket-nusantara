@@ -1,4 +1,4 @@
-import { Statistics } from "./Statistics";
+// import { Statistics } from "./Statistics";
 import { Button } from "./ui/button";
 import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";

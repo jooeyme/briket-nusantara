@@ -1,16 +1,12 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png";
+// import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
+// import cubeLeg from "../assets/cube-leg.png";
 import image1 from '../assets/gallery/white-1.jpg';
 import {
   Leaf,
-  Star,
-  Sparkles,
-  Flame,
-  Recycle,
+
   Globe,
-  Heart,
-  Droplet,
+
   ShieldCheck,
   // ... ikon lain yang Anda pilih
 } from 'lucide-react';

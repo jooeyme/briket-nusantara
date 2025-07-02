@@ -1,4 +1,4 @@
-import { Statistics } from "./Statistics";
+// import { Statistics } from "./Statistics";
 import logo from "../assets/logo.jpg";
 
 export const AboutCompany = () => {

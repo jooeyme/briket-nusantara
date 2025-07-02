@@ -1,4 +1,4 @@
-import { Badge } from "./ui/badge";
+// import { Badge } from "./ui/badge";
 import {
   Card,
   CardContent,
@@ -12,18 +12,18 @@ import image3 from "../assets/mission/misi3.jpg";
 import image4 from "../assets/mission/misi4.jpg";
 import image5 from "../assets/mission/misi5.jpg";
 
-import {
-  Award,
-  Sparkles,
-  TrendingUp,
-  Recycle,
-  Zap,
-  Globe,
-  Network,
-  Truck,
-  Leaf, // Mungkin tetap relevan untuk konteks kelapa/alam
-  // ... ikon lain yang Anda perlukan
-} from 'lucide-react';
+// import {
+//   Award,
+//   Sparkles,
+//   TrendingUp,
+//   Recycle,
+//   Zap,
+//   Globe,
+//   Network,
+//   Truck,
+//   Leaf, // Mungkin tetap relevan untuk konteks kelapa/alam
+//   // ... ikon lain yang Anda perlukan
+// } from 'lucide-react';
 
 interface FeatureProps {
   title: string;
@@ -64,17 +64,17 @@ const features: FeatureProps[] = [
   },
 ];
 
-const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
-];
+// const featureList: string[] = [
+//   "Dark/Light theme",
+//   "Reviews",
+//   "Features",
+//   "Pricing",
+//   "Contact form",
+//   "Our team",
+//   "Responsive design",
+//   "Newsletter",
+//   "Minimalist",
+// ];
 
 export const Features = () => {
   return (

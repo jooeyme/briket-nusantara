@@ -4,7 +4,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -19,7 +18,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'; 
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 enum PopularPlanType {
   NO = 0,

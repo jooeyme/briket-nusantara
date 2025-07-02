@@ -1,17 +1,17 @@
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+// import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
+// import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-  CardFooter,
+  
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
-import { LightBulbIcon } from "./Icons";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+// import { Check, Linkedin } from "lucide-react";
+// import { LightBulbIcon } from "./Icons";
+// import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import CardImage from '../assets/brown-2.jpg';
 
 export const HeroCards = () => {
