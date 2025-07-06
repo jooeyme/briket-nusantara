@@ -1,7 +1,7 @@
 // src/components/Contact.tsx
 
 import React from 'react';
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin, Warehouse } from 'lucide-react'; // Icons for contact info and social media
+import { Mail, Phone, MapPin, Instagram, Linkedin, Warehouse } from 'lucide-react'; // Icons for contact info and social media
 
 export const Contact: React.FC = () => {
      // --- GANTI DENGAN NOMOR WHATSAPP ANDA ---
