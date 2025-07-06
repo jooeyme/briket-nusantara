@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin, Warehouse } from 'l
 
 export const Contact: React.FC = () => {
      // --- GANTI DENGAN NOMOR WHATSAPP ANDA ---
-    const WHATSAPP_NUMBER = '62895331447837'; // Contoh: Ganti dengan nomor WhatsApp Anda (format internasional, tanpa + atau spasi)
+    const WHATSAPP_NUMBER = '6281548468353'; // Contoh: Ganti dengan nomor WhatsApp Anda (format internasional, tanpa + atau spasi)
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault(); // Mencegah reload halaman

@@ -3,11 +3,11 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 // import cubeLeg from "../assets/cube-leg.png";
 import image1 from '../assets/gallery/white-1.JPG';
 import {
-  Leaf,
-
-  Globe,
-
+BadgeCheck,
+  Package,
+Truck,
   ShieldCheck,
+  Star
   // ... ikon lain yang Anda pilih
 } from 'lucide-react';
 
@@ -19,22 +19,34 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Made from High-Quality Materials",
+    title: "Premium Grade Only",
     description:
-      "Each Briquet Nusantara piece is crafted from the finest selected natural materials, guaranteeing optimal and long-lasting combustion. Experience premium quality that delivers perfect heat for every moment!",
-    icon: <Leaf />,
+      "We deliver only high-quality, carefully selected products that meet international export standards. Our commitment to premium grade ensures that every shipment offers the best value and performance.",
+    icon: <BadgeCheck />,
   },
   {
-    title: "Environmentally Friendly",
+    title: "Consistent Quality Control",
     description:
-      "Contribute to a greener planet with every use! Briquet Nusantara is specifically designed to be eco-friendly, reducing your carbon footprint and ensuring environmental sustainability for future generations. It's a smart choice for a better future",
-    icon: <Globe />,
-  },
-  {
-    title: "No Chemical Additives",
-    description:
-      "Enjoy pure warmth without any worries! Briquet Nusantara is 100% free from harmful chemical additives, making it a healthy and safe choice for your family. Expect clean burning, fresh air, and peace of mind",
+      "Every product goes through strict and continuous quality checks to maintain consistent standards. This allows our clients to trust the uniformity, safety, and reliability of each batch we ship.",
     icon: <ShieldCheck />,
+  },
+  {
+    title: "Customizable Supply Solutions",
+    description:
+      "We offer flexible ordering systems—whether small or bulk quantities—and provide packaging options that can be tailored to your specific market or branding needs. This makes our service adaptable for both small businesses and large-scale distributors.",
+    icon: <Package />,
+  },
+  {
+    title: "Reliable Global Distribution",
+    description:
+      "From documentation to logistics, we handle every part of the export process professionally and efficiently. Our strong network and experience ensure smooth, on-time delivery to destinations worldwide.",
+    icon: <Truck />,
+  },
+  {
+    title: "Exclusive Collaboration with Local Manufacturers",
+    description:
+      "We partner exclusively with trusted Indonesian local manufacturers in order to provide high-quality products and to be able to distribute to the global market. It supports local industry growth while ensuring traceable, reliable sourcing for our clients.",
+    icon: <Star />,
   },
 ];
 
@@ -44,11 +56,11 @@ export const Services = () => {
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
-            The {" "}
+            Why  {" "}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-               Advantages {" "}
+               Choose Us {" "}
             </span>
-            of Our Products
+            
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
@@ -73,12 +85,13 @@ export const Services = () => {
             ))}
           </div>
         </div>
-
+<div className="items-top">
         <img
           src={image1}
-          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
+          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain "
           alt="About services"
         />
+        </div>
       </div>
     </section>
   );
