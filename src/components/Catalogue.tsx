@@ -24,110 +24,52 @@ enum PopularPlanType {
   NO = 0,
   YES = 1,
 }
+interface SpecificationItem {
+  label: string;
+  value: string;
+}
+
 
 interface PricingProps {
   title: string;
   popular: PopularPlanType;
-  price: number;
+  price: string;
   description: string;
   buttonText: string;
   benefitList: string[];
 
   longDescription?: string; // Deskripsi lebih panjang untuk popup
   image?: string;
+   specifications?: SpecificationItem[];
 }
 
 const pricingList: PricingProps[] = [
   {
-    title: "Briket Kelapa",
+    title: "Cube",
     popular: 0,
-    price: 0,
+    price: "Contact",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Super coconut briquettes are made from selected coconut shells.",
     buttonText: "Details Product",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Efficient Combustion",
+      "Environmentally Friendly",
+      "Premium Quality",
+      "Safe without chemicals"
     ],
-    longDescription: "Briket kelapa super kami dibuat dari batok kelapa pilihan dengan proses karbonisasi sempurna, menghasilkan briket dengan kalori tinggi dan residu abu sangat rendah. Sangat direkomendasikan untuk restoran BBQ dan shisha lounge yang mencari kualitas terbaik.",
+    longDescription: "Our super coconut briquettes are made from selected coconut shells with a perfect carbonization process, producing briquettes with high calories and very low ash residue. Highly recommended for BBQ restaurants and shisha lounges looking for the best quality.",
     image: CardImage, // Menggunakan gambar yang sama untuk contoh
-  },
-  {
-    title: "Briket Kelapa Premium",
-    popular: 1,
-    price: 5,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Details Product",
-    benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Briket Kelapa",
-    popular: 0,
-    price: 40,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Details Product",
-    benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Briket Kelapa",
-    popular: 0,
-    price: 0,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Details Product",
-    benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Briket Kelapa Premium",
-    popular: 1,
-    price: 5,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Details Product",
-    benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Briket Kelapa",
-    popular: 0,
-    price: 40,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Details Product",
-    benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+     specifications: [ // <--- Data Spesifikasi Produk
+      { label: "Shape", value: "Cube" },
+      { label: "Size", value: "2.5 x 2.5 x 2.5 cm / As Request" },
+      { label: "Ash Content", value: "2.37%" },
+      { label: "Ash Color", value: "White" },
+      { label: "Moisture", value: "4.70%" },
+      { label: "Burning Time", value: "90 to 120 Minutes" },
+      { label: "Ingredients", value: "Pure Charcoal" },
+      { label: "Fixed Carbon", value: "80.73%" },
+      { label: "Packaging", value: "Inner Box / As Request" },
+      { label: "Volatile Matter", value: "16.90%" },
     ],
   },
 ];
@@ -154,7 +96,7 @@ export const Catalogue = () => {
         Catalog
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Temukan berbagai jenis produk arang berkualitas tinggi kami.
+        Discover our wide range of high quality charcoal products.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -183,10 +125,10 @@ export const Catalogue = () => {
                   </Badge>
                 ) : null}
               </CardTitle>
-              <div>
+              {/* <div>
                 <span className="text-3xl font-bold">${pricing.price}</span>
                 <span className="text-muted-foreground"> /Ton</span>
-              </div>
+              </div> */}
 
               <CardDescription>{pricing.description}</CardDescription>
             </CardHeader>
@@ -248,7 +190,7 @@ export const Catalogue = () => {
               <p className="text-gray-700 dark:text-gray-200">{selectedProduct.longDescription}</p>
             )}
 
-            <h4 className="font-semibold text-gray-800 dark:text-gray-100 mt-4 mb-2">Manfaat & Fitur Utama:</h4>
+            <h4 className="font-semibold text-gray-800 dark:text-gray-100 mt-4 mb-2">Benefit:</h4>
             <div className="space-y-2">
               {selectedProduct?.benefitList.map((benefit: string, index: number) => (
                 <span key={index} className="flex items-center text-gray-700 dark:text-gray-200">
@@ -258,9 +200,25 @@ export const Catalogue = () => {
               ))}
             </div>
 
-            {selectedProduct?.price !== undefined && ( // Tampilkan harga jika ada
-              <p className="text-lg font-bold text-primary mt-4">Harga: ${selectedProduct.price} / Ton</p>
+            {/* --- Bagian Spesifikasi Produk --- */}
+            {selectedProduct?.specifications && (
+              <>
+                <h4 className="font-semibold text-xl text-gray-800 dark:text-gray-100 mt-4 mb-2">Product Specification:</h4>
+                <ul className="space-y-2 text-gray-700 dark:text-gray-200">
+                  {selectedProduct.specifications.map((spec, index) => (
+                    <li key={index} className="flex items-center">
+                      <span className="font-medium w-32 md:w-40 flex-shrink-0">{spec.label}</span>
+                      <span className="mr-2">:</span>
+                      <span>{spec.value}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
             )}
+
+            {/* {selectedProduct?.price !== undefined && ( // Tampilkan harga jika ada
+              <p className="text-lg font-bold text-primary mt-4">Harga: ${selectedProduct.price} / Ton</p>
+            )} */}
 
             {/* Anda bisa menambahkan lebih banyak properti detail di sini sesuai kebutuhan */}
           </div>

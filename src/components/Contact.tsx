@@ -1,7 +1,7 @@
 // src/components/Contact.tsx
 
 import React from 'react';
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react'; // Icons for contact info and social media
+import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin, Warehouse } from 'lucide-react'; // Icons for contact info and social media
 
 export const Contact: React.FC = () => {
      // --- GANTI DENGAN NOMOR WHATSAPP ANDA ---
@@ -50,10 +50,20 @@ export const Contact: React.FC = () => {
               <div className="flex items-start">
                 <MapPin className="text-primary w-6 h-6 mr-4 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-700 dark:text-gray-200">Address </h4>
+                  <h4 className="font-semibold text-gray-700 dark:text-gray-200">Office Address </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Gg Cemani No 765B Pandeyan, Umbulharjo, Yogyakarta. <br />
-                    
+                    Gg Cemani No 765B Pandeyan, Umbulharjo, Yogyakarta.<br />
+                  </p>
+                 
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <Warehouse className="text-primary w-6 h-6 mr-4 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-gray-700 dark:text-gray-200">Production Site </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Located in Klepu, Semarang, Central Java<br />
                   </p>
                 </div>
               </div>
@@ -79,13 +89,13 @@ export const Contact: React.FC = () => {
             <div className="mt-8">
               <h4 className="font-semibold text-gray-800 dark:text-gray-100 mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="https://instagram.com/your_instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a href="https://www.instagram.com/p/DLmcfIHTG9p/?igsh=OTlwNWx1eHV6eWVz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <Instagram className="w-8 h-8 text-gray-500 hover:text-primary transition-colors" />
                 </a>
-                <a href="https://facebook.com/your_facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                {/* <a href="https://facebook.com/your_facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <Facebook className="w-8 h-8 text-gray-500 hover:text-primary transition-colors" />
-                </a>
-                <a href="https://linkedin.com/company/your_linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                </a> */}
+                <a href="https://www.linkedin.com/in/salman-rofiul-yumna-a9152a237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="w-8 h-8 text-gray-500 hover:text-primary transition-colors" />
                 </a>
                 {/* Tambahkan ikon media sosial lainnya jika ada */}
@@ -160,7 +170,7 @@ export const Contact: React.FC = () => {
                   id="name"
                   name="name"
                   className=" appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-700 dark:border-gray-600"
-                  placeholder="Nama Lengkap"
+                  placeholder="Full Name"
                   required
                 />
               </div>
@@ -173,7 +183,7 @@ export const Contact: React.FC = () => {
                   id="email"
                   name='email'
                   className=" appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-700 dark:border-gray-600"
-                  placeholder="email@contoh.com"
+                  placeholder="email@example.com"
                   required
                 />
               </div>
@@ -186,7 +196,7 @@ export const Contact: React.FC = () => {
                   name='message'
                   rows={5}
                   className=" appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-700 dark:border-gray-600"
-                  placeholder="Ketik pesan Anda di sini..."
+                  placeholder="Type your message here..."
                   required
                 ></textarea>
               </div>
@@ -211,7 +221,7 @@ export const Contact: React.FC = () => {
           <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg">
             {/* Ganti iframe src ini dengan embed code dari Google Maps Anda */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.666324075191!2d106.79090687500001!3d-6.561939193437505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e317042571%3A0xc3b8a36c6422f2c8!2sBogor%20Regency%20Government%20Office!5e0!3m2!1sen!2sid!4v1719927653549!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d807.3147987811074!2d110.38903809263!3d-7.812449833760743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5700709ab247%3A0x9b720b71bf886727!2swedang%20uwuh%20Akash%20nusantara!5e0!3m2!1sen!2sid!4v1751809779984!5m2!1sen!2sid" 
               width="100%"
               height="450"
               style={{ border: 0 }}

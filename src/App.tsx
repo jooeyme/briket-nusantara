@@ -21,6 +21,9 @@ import { MainLayout } from "./components/MainLayout";
 import { ClickableCarousel } from "./components/Carousel";
 import { Contact } from "./components/Contact";
 import { AboutCompany } from "./components/AboutCompany";
+import { Footage } from "./components/Footage";
+import { ProductAdv } from "./components/Product-advantages";
+import { MockupProfile } from "./components/MockupProfile";
 import "./App.css";
 
 function App() {
@@ -51,7 +54,10 @@ function App() {
           <AboutCompany />
           <HowItWorks />
           <Features />
+          <Footage />
+          <ProductAdv />
           <Team />
+          <MockupProfile pdfUrl="/Company Profile PT PRADIPA MUDA NUSANTARA.pdf"/>
           </>
           } /> {/* This is your /about path */}
         <Route path="/catalogue" element={<Catalogue />} /> 

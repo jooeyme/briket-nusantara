@@ -2,9 +2,6 @@
 import {
   Card,
   CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import image from "../assets/mission/misi1.jpg";
 import image2 from "../assets/mission/misi2.jpg";
@@ -103,21 +100,21 @@ export const Features = () => {
       </div> */}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-        {features.map(({ title, description, image }: FeatureProps) => (
+        {features.map(({ title, description }: FeatureProps) => (
           <Card key={title}>
-            <CardHeader>
+            {/* <CardHeader>
               <CardTitle>{title}</CardTitle>
-            </CardHeader>
+            </CardHeader> */}
 
             <CardContent>{description}</CardContent>
 
-            <CardFooter>
+            {/* <CardFooter>
               <img
                 src={image}
                 alt="About feature"
                 className="w-[200px] lg:w-[300px] mx-auto"
               />
-            </CardFooter>
+            </CardFooter> */}
           </Card>
         ))}
       </div>
