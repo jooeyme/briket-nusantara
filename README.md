@@ -1,10 +1,6 @@
-# Shadcn/UI Landing Page Template
+# 
 
-## <a href="https://ui.shadcn.com/" target="_blank">ShadcnUI</a> + <a href="https://react.dev/" target="_blank">React</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
-
-![shadch-landing-page](https://github.com/leoMirandaa/shadcn-landing-page/assets/61714687/3ba7b51f-9589-4541-800a-5ab7cecad1b5)
-
-Build your React landing page effortlessly with the required sections to your project. <a href="https://shadcn-landing-page.vercel.app/" target="_blank">Live Demo</a>
+Build your React landing page effortlessly with the required sections to your project. <a href="https://briket-nusantara.vercel.app/" target="_blank">Live Demo</a>
 
 ## Sections
 
@@ -37,7 +33,7 @@ Build your React landing page effortlessly with the required sections to your pr
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/leoMirandaa/shadcn-landing-page.git
+git clone https://github.com/jooeyme/briket-nusantara.git
 ```
 
 2. Go into project
