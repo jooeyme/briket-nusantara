@@ -20,16 +20,12 @@ export function Gallery() {
       id="gallery"
       className="container pb-24 pt-12"
     >
-        <h2 className="text-3xl md:text-4xl font-bold text-center">
+        <h2 className="text-3xl md:text-4xl pb-8 font-bold text-center">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Briquet Nusantara{" "}
         </span>
         Gallery
       </h2>
-      <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
-      </h3>
 
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
       <div className="grid gap-4">

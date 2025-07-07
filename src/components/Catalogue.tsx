@@ -182,11 +182,19 @@ export const Catalogue = () => {
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
-            className={
-              pricing.popular === PopularPlanType.YES
-                ? "drop-shadow-xl text-center shadow-black/10 dark:shadow-white/10"
-                : "text-center"
+            className={`
+              cursor-pointer                   /* Menunjukkan bahwa elemen bisa diklik */
+              hover:shadow-xl                  /* Efek bayangan saat hover */
+              hover:scale-105                  /* Efek sedikit membesar saat hover */
+              transition-all duration-300      /* Animasi transisi yang halus */
+              ${pricing.popular === PopularPlanType.YES
+                  ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10"
+                  : ""
+              }
+              text-center
+              `
             }
+            
             onClick={() => handleDetailsClick(pricing)}
           >
             <CardHeader>

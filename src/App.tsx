@@ -46,7 +46,7 @@ function App() {
           {/* <Testimonials /> */}
           {/* <Pricing /> */}
           {/* <Newsletter /> */}
-          <FAQ />
+          {/* <FAQ /> */}
           
           
         </>

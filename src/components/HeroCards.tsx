@@ -3,8 +3,6 @@ import { Badge } from "./ui/badge";
 // import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
   
@@ -13,6 +11,7 @@ import {
 // import { LightBulbIcon } from "./Icons";
 // import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import CardImage from '../assets/brown-2.JPG';
+import Hexa from '../assets/hexa.jpg';
 
 export const HeroCards = () => {
   return (
@@ -50,18 +49,24 @@ export const HeroCards = () => {
                 alt="Card feature image" // Always provide descriptive alt text
                 className="w-full h-auto mb-4 rounded-t-md" // Example classes for styling
               />
-          <CardTitle className="text-center">Briquet Premium</CardTitle>
-          <CardDescription className="font-normal text-primary">
-            Environmentally Friendly
-          </CardDescription>
+          <CardTitle className="text-center">Briquet Cube 
+             <div className="">
+            <Badge
+              variant="secondary"
+              className="text-sm text-primary"
+            >
+              Best Seller
+            </Badge>
+            </div>
+          </CardTitle>
         </CardHeader>
 
-        <CardContent className="text-center pb-2">
+        {/* <CardContent className="text-center pb-2">
           <p>
             I really enjoy transforming ideas into functional software that
             exceeds expectations
           </p>
-        </CardContent>
+        </CardContent> */}
 
         {/* <CardFooter>
           <div>
@@ -118,28 +123,26 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
               <img
-                src={CardImage}// Adjust path to your image
+                src={Hexa}// Adjust path to your image
                 alt="Card feature image" // Always provide descriptive alt text
                 className="w-full h-auto mb-4 rounded-t-md" // Example classes for styling
               />
 
-          <CardTitle className="flex item-center justify-between">
-            Briquet
+          <CardTitle className="text-center">
+            Briquet Hexagonal 
+            <div className="">
             <Badge
               variant="secondary"
               className="text-sm text-primary"
             >
-              Most popular
+              Best Seller
             </Badge>
+            </div>
           </CardTitle>
-          <div>
-            <span className="text-3xl font-bold">$100</span>
-            <span className="text-muted-foreground"> /pack</span>
-          </div>
 
-          <CardDescription>
+          {/* <CardDescription>
             Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
-          </CardDescription>
+          </CardDescription> */}
         </CardHeader>
 
         {/* <CardContent>

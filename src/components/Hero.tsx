@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 //import { buttonVariants } from "./ui/button";
 import { HeroCards } from "./HeroCards";
+import { Link } from "react-router-dom";
 //import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
@@ -28,8 +29,9 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
+          <Link to="/catalogue" className="w-full md:w-1/3">
           <Button className="w-full md:w-1/3">More Information</Button>
-
+          </Link>
           {/* <a
             rel="noreferrer noopener"
             href="https://github.com/leoMirandaa/shadcn-landing-page.git"
