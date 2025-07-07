@@ -26,6 +26,7 @@ import { ProductAdv } from "./components/Product-advantages";
 import { MockupProfile } from "./components/MockupProfile";
 import { ProductFeaturesSection } from "./components/Icon";
 import { Certifications } from "./components/Certified";
+import { NewHero } from "./components/NewHero";
 import "./App.css";
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
         <Route element={<MainLayout />}>
         <Route path="/home" element={
         <>
-          <Hero />
+        <NewHero />
+          {/* <Hero /> */}
           {/* <Sponsors /> */}
           <About />
           <ClickableCarousel/>
