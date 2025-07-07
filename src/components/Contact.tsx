@@ -63,7 +63,7 @@ export const Contact: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-gray-700 dark:text-gray-200">Production Site </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Located in Klepu, Semarang, Central Java<br />
+                    Located in Jl. Raya Klepu, Krajan, Klepu, Pringapus, Semarang Regency, Central Java<br />
                   </p>
                 </div>
               </div>
