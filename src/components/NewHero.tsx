@@ -4,16 +4,17 @@ import React, { useState, useEffect } from 'react'; // Import useState dan useEf
 import { useNavigate } from 'react-router-dom';
 
 // Impor 3 gambar latar belakang berbeda
-import heroBg1 from '../assets/footage-2.jpg'; // Ganti dengan path gambar Anda
-import heroBg2 from '../assets/footage-1.jpg'; // Ganti dengan path gambar Anda
-import heroBg3 from '../assets/footage-4.jpg'; // Ganti dengan path gambar Anda
-
+import heroBg1 from '../assets/hero-1.jpg'; // Ganti dengan path gambar Anda
+import heroBg2 from '../assets/hero-2.jpg'; // Ganti dengan path gambar Anda
+import heroBg3 from '../assets/hero-3.jpg'; // Ganti dengan path gambar Anda
+import heroBg4 from '../assets/hero-4.jpg';
 
 // Daftar semua gambar yang akan diganti secara otomatis
 const heroImages = [
   heroBg1,
   heroBg2,
   heroBg3,
+  heroBg4,
 ];
 
 interface HeroProps {
