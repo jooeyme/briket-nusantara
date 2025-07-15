@@ -13,34 +13,76 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "What product do you export?",
+    answer: "We export premium coconut shell briquettes, mainly used for shisha/hookah.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "Can I visit the factory before placing an order?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Absolutely, We welcome factory visits for serious buyers who wish to inspect the production process and quality firsthand. Our partner factories are located in Indonesia, Please contact us in advance to arrange the schedule.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+      "Do you offer product samples?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "Yes, samples are available upon request. Product samples are free, but shipping costs must be covered by the buyer",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Can you customize packaging or private labeling?",
+    answer: "Yes. We support OEM and private label services. Packaging can be customized based on buyer requirements.",
     value: "item-4",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+      "What is your minimum order quantity (MOQ)?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "The MOQ is generally one 20ft container, However, we're open to negotiation for first-time buyers.",
     value: "item-5",
+  },
+  {
+    question:
+      "What are your payment terms?",
+    answer:
+      "We accept payments with a 50% deposit and 50% balance against shipping documents. Terms can be discussed further during negotiation.",
+    value: "item-6",
+  },
+  {
+    question:
+      "Do you own the production facility?",
+    answer:
+      "We collaborate with a network of certified factories that have a strong export track record. This allows us to offer flexible production capacity, consistent quality, and competitive pricing tailored to each client's needs.",
+    value: "item-7",
+  },
+  {
+    question:
+      "How do you ensure the quality of your briquettes?",
+    answer:
+      "We apply multi-step quality control, use third-party lab testing when required, and maintain transparent communication throughout production and shipping.",
+    value: "item-8",
+  },
+  {
+    question:
+      "What makes your briquettes better than others?",
+    answer:
+    
+      `Our briquettes are:
+      1. Made from 100% natural coconut shell
+      2. Long-burning (90-120 Minutes)
+      3. Odorless and smokeless
+      4. Low ash content (<2.5%).
+      They're lab-tested, cleanly packed, and suitable for both shisha and BBQ use.
+      `,
+    value: "item-9",
+  },
+  {
+    question:
+      "Can you help with shipping and documentation?",
+    answer:
+      "Yes, we assist with export documents, logistics coordination, and customs compliance to ensure a smooth transaction process.",
+    value: "item-10",
   },
 ];
 

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About } from "./components/About";
 import { Cta } from "./components/Cta";
-// import { FAQ } from "./components/FAQ";
+import { FAQ } from "./components/FAQ";
 import { Features } from "./components/Features";
 // import { Footer } from "./components/Footer";
 // import { Hero } from "./components/Hero";
@@ -27,6 +27,7 @@ import { MockupProfile } from "./components/MockupProfile";
 import { ProductFeaturesSection } from "./components/Icon";
 import { Certifications } from "./components/Certified";
 import { NewHero } from "./components/NewHero";
+import { ProductionFlow } from "./components/ProductionFlow";
 import "./App.css";
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
           {/* <Testimonials /> */}
           {/* <Pricing /> */}
           {/* <Newsletter /> */}
-          {/* <FAQ /> */}
+          <FAQ /> 
           
           
         </>
@@ -60,6 +61,7 @@ function App() {
           <Features />
           <Footage />
           <ProductAdv />
+          <ProductionFlow />
           <Team />
           <MockupProfile pdfUrl="/Company Profile PT PRADIPA MUDA NUSANTARA.pdf"/>
           </>

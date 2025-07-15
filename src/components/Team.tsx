@@ -59,7 +59,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: hawa,
-    name: "Hawa",
+    name: "Hawa Habibah",
     position: "International Relation Director",
     socialNetworks: [
       {

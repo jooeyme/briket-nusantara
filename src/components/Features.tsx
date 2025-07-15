@@ -99,14 +99,14 @@ export const Features = () => {
         ))}
       </div> */}
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 ">
         {features.map(({ title, description }: FeatureProps) => (
           <Card key={title}>
             {/* <CardHeader>
               <CardTitle>{title}</CardTitle>
             </CardHeader> */}
 
-            <CardContent>{description}</CardContent>
+            <CardContent className="pt-6">{description}</CardContent>
 
             {/* <CardFooter>
               <img

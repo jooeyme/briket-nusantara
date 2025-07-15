@@ -42,7 +42,7 @@ export const Certifications: React.FC = () => {
   return (
     <section className="py-12 bg-black text-white"> {/* Background hitam sesuai gambar */}
       <div className="container mx-auto px-4">
-        <h2 className="text-xl font-bold text-center text-white mb-8">
+        <h2 className="text-3xl font-bold text-center text-white mb-8">
           Certified by
         </h2>
 
