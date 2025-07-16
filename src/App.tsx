@@ -28,6 +28,7 @@ import { ProductFeaturesSection } from "./components/Icon";
 import { Certifications } from "./components/Certified";
 import { NewHero } from "./components/NewHero";
 import { ProductionFlow } from "./components/ProductionFlow";
+import { WhatsAppWidget } from "./components/WhatsAppWidget";
 import "./App.css";
 
 function App() {
@@ -84,7 +85,7 @@ function App() {
         </Route>
       </Routes>
 
-      
+      <WhatsAppWidget whatsappNumber="6281548468353" companyName="PT. Pradipa Muda Nusantara" />
     </Router>
   );
 }

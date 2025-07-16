@@ -131,7 +131,7 @@ import image4 from '../assets/footage-4.jpg';
 import image5 from '../assets/footage-5.jpg';
 import image6 from '../assets/footage-6.jpg';
 import image7 from '../assets/footage-7.jpg';
-
+import image8 from '../assets/footage-9.jpg';
 
 // Anda bisa membuat array data gambar agar lebih mudah di-loop
 const galleryImages = [
@@ -142,7 +142,7 @@ const galleryImages = [
   { id: 5, src: image5, alt: "Pengemasan Produk" },
   { id: 6, src: image6, alt: "Distribusi Lokal" },
   { id: 7, src: image7, alt: "Kualitas Premium" },
-  
+  { id: 8, src: image8, alt: "Kualitas Premium" },
 ];
 
 

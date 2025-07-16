@@ -69,7 +69,7 @@ const teamList: TeamProps[] = [
 
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/hawa.habibah/",
       },
     ],
   },
@@ -80,11 +80,11 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/ratri-pramudhita-653b38257",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/ratriprmdhta/",
       },
     ],
   },
