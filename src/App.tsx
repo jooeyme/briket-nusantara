@@ -85,7 +85,7 @@ function App() {
         </Route>
       </Routes>
 
-      {/* <WhatsAppWidget whatsappNumber="6281548468353" companyName="PT. Pradipa Muda Nusantara" /> */}
+      <WhatsAppWidget whatsappNumber="6281548468353" companyName="PT. Pradipa Muda Nusantara" />
     </Router>
   );
 }
