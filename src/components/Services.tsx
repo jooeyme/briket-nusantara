@@ -1,7 +1,7 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 // import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
 // import cubeLeg from "../assets/cube-leg.png";
-import image1 from '../assets/gallery/white-1.JPG';
+import image1 from '../assets/quality.jpg';
 import {
 BadgeCheck,
   Package,
@@ -53,19 +53,15 @@ const serviceList: ServiceProps[] = [
 export const Services = () => {
   return (
     <section className="container pt-24 pb-12">
-      <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold">
+      <h2 className="text-3xl md:text-4xl font-bold pb-16">
             Why  {" "}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                Choose Us {" "}
             </span>
             
           </h2>
-
-          <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            
-          </p>
+      <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center lg:items-start">
+        <div className="order-last lg:order-first w-full">
 
           <div className="flex flex-col gap-8">
             {serviceList.map(({ icon, title, description }: ServiceProps) => (
@@ -85,12 +81,12 @@ export const Services = () => {
             ))}
           </div>
         </div>
-<div className="items-top">
-        <img
-          src={image1}
-          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain "
-          alt="About services"
-        />
+        <div className="order-first lg:order-last w-full h-full flex items-center justify-center">
+          <img
+            src={image1}
+            className="w-auto h-full object-cover rounded-lg"
+            alt="About services"
+          />
         </div>
       </div>
     </section>

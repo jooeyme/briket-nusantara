@@ -187,6 +187,7 @@ export const Catalogue = () => {
               hover:shadow-xl                  /* Efek bayangan saat hover */
               hover:scale-105                  /* Efek sedikit membesar saat hover */
               transition-all duration-300      /* Animasi transisi yang halus */
+              bg-primary dark:bg-primary/10
               ${pricing.popular === PopularPlanType.YES
                   ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10"
                   : ""
@@ -201,9 +202,9 @@ export const Catalogue = () => {
                 <img
                 src={pricing.image}// Adjust path to your image
                 alt="Card feature image" // Always provide descriptive alt text
-                className="w-full h-64 object-cover rounded-t-lg mb-4" // Example classes for styling
+                className="w-full h-64 object-cover rounded-t-lg " // Example classes for styling
               />
-              <CardTitle className="text-xl font-bold text-white mb-2">
+              <CardTitle className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                 {pricing.title}
                 {pricing.popular === PopularPlanType.YES ? (
                   <Badge
