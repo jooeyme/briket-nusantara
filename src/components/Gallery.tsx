@@ -22,7 +22,7 @@ export function Gallery() {
     >
         <h2 className="text-3xl md:text-4xl pb-8 font-bold text-center">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Briquet Nusantara{" "}
+          Briquettes Nusantara{" "}
         </span>
         Gallery
       </h2>
