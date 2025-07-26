@@ -209,7 +209,7 @@ export const Footer = () => {
             Office Address
           </a>
           <p className="opacity-80 leading-relaxed max-w-sm">
-            We are located at Gg Cemani No 765B Pandeyan, Umbulharjo, Yogyakarta.
+            We are located at Gg Cemani No 765B Pandeyan, Umbulharjo, Yogyakarta, Indonesia
           </p>
         </div>
 
@@ -221,7 +221,7 @@ export const Footer = () => {
             Production Site
           </a>
           <p className="opacity-80 leading-relaxed max-w-sm">
-            Jl. Raya Klepu, Krajan, Klepu, Pringapus, Semarang Regency, Central Java.
+            Semarang Regency, Central Java, Indonesia.
           </p>
         </div>
 

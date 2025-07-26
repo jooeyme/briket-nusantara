@@ -52,7 +52,7 @@ export const Contact: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-gray-700 dark:text-gray-200">Office Address </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Gg Cemani No 765B Pandeyan, Umbulharjo, Yogyakarta.<br />
+                    Gg Cemani No 765B Pandeyan, Umbulharjo, Yogyakarta, Indonesia.<br />
                   </p>
                  
                 </div>
@@ -63,7 +63,7 @@ export const Contact: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-gray-700 dark:text-gray-200">Production Site </h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Jl. Raya Klepu, Krajan, Klepu, Pringapus, Semarang Regency, Central Java<br />
+                    Semarang Regency, Central Java, Indonesia.<br />
                   </p>
                 </div>
               </div>
