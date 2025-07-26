@@ -12,7 +12,7 @@ interface WhatsAppWidgetProps {
 
 export const WhatsAppWidget: React.FC<WhatsAppWidgetProps> = ({
   whatsappNumber,
-  initialMessage = "Hi How Are you. 👋\n\nWe are from [Your Company Name] 👋\n\nLets Discuss with our team on whatsapp!",
+  initialMessage = "Hi! I'd like to ask about your coconut shell briquettes. Could you share more details?",
   companyName = "PT. Pradipa Muda Nusantara", // Default company name
 }) => {
   const [isOpen, setIsOpen] = useState(false); // State to control widget visibility
